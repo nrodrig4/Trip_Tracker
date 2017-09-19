@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <?ignore
+    <item
+        android:id="@+id/map_type_streets"
+        android:orderInCategory="100"
+        android:title="@string/map_type_streets"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_hybrid"
+        android:orderInCategory="100"
+        android:title="@string/map_type_hybrid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_terrain"
+        android:orderInCategory="100"
+        android:title="@string/map_type_terrain"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_satellite"
+        android:orderInCategory="100"
+        android:title="@string/map_type_satellite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_dark"
+        android:orderInCategory="100"
+        android:title="@string/map_type_dark"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_light"
+        android:orderInCategory="100"
+        android:title="@string/map_type_light"
+        app:showAsAction="never" />
+        ?>
+    <item
+        android:id="@+id/map_download"
+        android:orderInCategory="100"
+        android:title="Download Offline Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/travel_history"
+        android:orderInCategory="100"
+        android:title="View Past Trips"
+        app:showAsAction="never" />
+
+</menu>

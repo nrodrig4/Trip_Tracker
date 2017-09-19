@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DimGray"
+    tools:context="com.example.nicrodriguez.seniordesign.Speedometer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:layout_weight="4">
+
+
+            <LinearLayout
+                android:id="@+id/LeftColumn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/SpeedometerSpeedLatView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_border"
+                    android:paddingLeft="10dp"
+                    android:text="@string/latitude"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/SpeedometerSpeedLonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_border"
+                    android:paddingLeft="10dp"
+                    android:text="@string/longitude"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/RightColumn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/distanceTraveledText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/my_border"
+                    android:text="Distance Traveled: --"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/SpeedometerAccuracyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_border"
+                    android:paddingLeft="10dp"
+                    android:text="@string/accuracy"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textColorLink="@color/background_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/SpeedometerSpeedView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/my_border"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/car_speed"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textColor"
+                android:textSize="100sp" />
+
+            <TextView
+                android:id="@+id/SpeedometerSpeedAverageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+
+
+                android:background="@drawable/my_border"
+                android:drawablePadding="10dp"
+                android:text="@string/speed_average"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="30sp" />
+<?ignore
+            <TextView
+                android:id="@+id/SpeedometerSpeedLimitView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+
+                android:background="@drawable/my_border"
+                android:drawablePadding="10dp"
+                android:text="@string/speed_limit"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="50sp" />
+    ?>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PortView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DimGray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nicrodriguez.seniordesign.Main2Activity"
+
+    tools:showIn="@layout/app_bar_main2"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <fragment
+            android:id="@+id/SpeedContainer"
+            android:name="com.example.nicrodriguez.seniordesign.Speedometer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <fragment
+            android:id = "@+id/MapContainer"
+            android:name = "com.example.nicrodriguez.seniordesign.Map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"/>
+
+        <fragment
+            android:id = "@+id/GraphContainer"
+            android:name = "com.example.nicrodriguez.seniordesign.SpeedGraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

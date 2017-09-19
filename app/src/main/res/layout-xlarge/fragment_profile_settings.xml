@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.example.nicrodriguez.seniordesign.ProfileSettings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/profile_settings_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/settings_header"
+        android:text="@string/profile_settings"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/my_border"
+        android:minHeight="175dp"
+        android:minWidth="175dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/profile_pic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="139dp"
+        android:paddingBottom="10dp"
+        android:text="Profile Picture"
+        android:textColor="@color/textColor"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/profile_pic_label"
+        android:background="@drawable/ic_photo_album_black_24dp" />
+
+</RelativeLayout>

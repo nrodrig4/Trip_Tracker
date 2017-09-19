@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.example.nicrodriguez.seniordesign.AllTimeStatsFrag">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="15">
+
+
+
+                <com.mapbox.mapboxsdk.maps.MapView
+                    android:id="@+id/mapViewAllTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/my_border"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="5">
+                </com.mapbox.mapboxsdk.maps.MapView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_app_bar">
+                                <TextView
+                                    android:id="@+id/allAverageSpeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/textColor"
+                                    android:background="@drawable/my_border"
+                                    android:text="@string/average_speed"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/allMaxSpeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/max_speed"
+                                    android:textSize="12sp"
+                                    android:paddingLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/textColor"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/my_border"/>
+                                <TextView
+                                    android:id="@+id/allDistanceTraveledText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/distance_traveled"
+                                    android:textSize="12sp"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@color/textColor"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/my_border"/>
+
+                                <TextView
+                                    android:id="@+id/allTimeOnRoad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/time_on_road"
+                                    android:textSize="12sp"
+                                    android:paddingLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/textColor"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/my_border"/>
+
+                                <TextView
+                                    android:id="@+id/allNumberOfTrips"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Number Of Trips: -- "
+                                    android:textSize="12sp"
+                                    android:paddingLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/textColor"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/my_border"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:weightSum="20"
+                            android:background="@drawable/activity_app_bar">
+                                <TextView
+                                    android:id="@+id/allTripListTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="19"
+                                    android:background="@drawable/title_background"
+                                    android:textColor="@color/textColor"
+                                    android:textAlignment="center"
+                                    />
+
+                                <ListView
+                                    android:id="@+id/allTripListView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                </ListView>
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+</RelativeLayout>

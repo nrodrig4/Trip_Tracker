@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/map_type_streets"
+        android:orderInCategory="100"
+        android:title="@string/map_type_streets"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_hybrid"
+        android:orderInCategory="100"
+        android:title="@string/map_type_hybrid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_satellite"
+        android:orderInCategory="100"
+        android:title="@string/map_type_satellite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_type_terrain"
+        android:orderInCategory="100"
+        android:title="@string/map_type_terrain"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/map_type_dark"
+        android:orderInCategory="100"
+        android:title="@string/map_type_dark"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/map_type_tron"
+        android:orderInCategory="100"
+        android:title="@string/map_type_tron"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".UnitsSettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/settings_header"
+        android:text="Display Settings"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="30sp" />
+
+    <Switch
+        android:id="@+id/UnitSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="139dp"
+        android:checked="true"
+        android:showText="true"
+        android:splitTrack="true"
+        android:textOff=" "
+        android:textOn=" "
+        tools:checked="true" />
+    <TextView
+        android:id = "@+id/UnitSwitchLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_toRightOf="@id/UnitSwitch"
+        android:layout_alignTop="@id/UnitSwitch"
+        android:paddingLeft = "20dp"
+        android:text = "MPH"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"/>
+
+    <RadioGroup
+        android:id="@+id/color_mode_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/daytime"
+        android:orientation="vertical"
+        android:layout_below="@+id/color_mode_label"
+        android:layout_alignStart="@+id/UnitSwitch">
+
+        <RadioButton
+            android:id="@+id/daytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/UnitSwitch"
+            android:layout_below="@+id/UnitSwitch"
+
+            android:text="Day Mode"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/nightime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/daytime"
+            android:layout_below="@+id/daytime"
+            android:text="Night Mode"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/autoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nightime"
+            android:layout_below="@+id/nightime"
+            android:text="Automatic"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/units_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="31dp"
+
+        android:text="Measurment Units"
+        android:textColor="@color/textColor"
+        android:textSize="35sp"
+        android:layout_alignBottom="@+id/UnitSwitch"
+        android:layout_alignStart="@+id/color_mode_label" />
+
+    <TextView
+        android:id="@+id/color_mode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="34dp"
+        android:text="Display Color"
+        android:textColor="@color/textColor"
+        android:textSize="35sp"
+        android:layout_below="@+id/UnitSwitch"
+        android:layout_alignEnd="@+id/color_mode_group" />
+
+
+</RelativeLayout>

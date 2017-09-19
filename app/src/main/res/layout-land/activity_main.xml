@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LandView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/LandFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/SpeedMapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <fragment
+                android:id="@+id/fragment_speedometer_land"
+                android:name="com.example.nicrodriguez.seniordesign.Speedometer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment_map_land"
+                android:name="com.example.nicrodriguez.seniordesign.Map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.nicrodriguez.seniordesign.SpeedGraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+</RelativeLayout>

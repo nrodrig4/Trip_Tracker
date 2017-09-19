@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.Settings">
+
+
+    <LinearLayout
+        android:id="@+id/outerLinLayoutSet"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.nicrodriguez.seniordesign.UnitsSettingsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            tools:layout="@layout/fragment_background_settings" />
+
+
+        <LinearLayout
+            android:id="@+id/innerLinLayoutSet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/unitSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_button"
+                android:text="Units" />
+
+            <Button
+                android:id="@+id/profileSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/middle_button"
+                android:text="Profile" />
+
+            <Button
+                android:id="@+id/arduinoSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_button"
+                android:text="Arduino" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

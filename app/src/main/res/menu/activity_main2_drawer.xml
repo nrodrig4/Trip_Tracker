@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="User Data">
+        <menu>
+            <item
+                android:id="@+id/trip_history_tab"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Trip History" />
+            <item
+                android:id="@+id/user_stats_tab"
+                android:icon="@drawable/ic_poll_black_24dp"
+                android:title="User Statistcs"
+                />
+        </menu>
+    </item>
+
+
+    <item android:title="Offline Maps">
+        <menu>
+            <item
+                android:id="@+id/download_offline"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Download Offline Maps" />
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="Account Settings" >
+        <menu>
+        <item
+            android:id="@+id/settings_tab"
+            android:title="Configure Settings"
+            android:icon="@drawable/ic_menu_manage"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_keyboard_return_black_24dp"
+            android:title="Switch Profile" />
+
+            </menu>
+    </item>
+
+
+</menu>

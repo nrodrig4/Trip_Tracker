@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.example.nicrodriguez.seniordesign.UserStats">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="21">
+
+        <fragment
+            android:id="@+id/mainStatsFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:name="com.example.nicrodriguez.seniordesign.StatsByDayFrag"/>
+
+        <fragment
+            android:id="@+id/graphFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:name="com.example.nicrodriguez.seniordesign.TripHistoryGraph" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/dayButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="day"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:background="@drawable/left_button"/>
+
+
+            <Button
+                android:id="@+id/allTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/all_time"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:background="@drawable/right_button"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

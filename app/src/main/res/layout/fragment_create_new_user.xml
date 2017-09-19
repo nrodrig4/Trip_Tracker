@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.CreateNewUserFrag">
+
+
+
+
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text = "@string/enter_username"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_label"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Username" />
+
+
+
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editUsername"
+            android:paddingTop="10dp"
+            android:text = "@string/enter_password"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/password_label"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:hint="@string/password"
+            android:textColor="@color/textColor"/>
+
+
+        <TextView
+            android:id="@+id/password_check_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editPassword"
+            android:paddingTop="10dp"
+            android:text = "Re-Enter Password:"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/editCheckPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/password_check_label"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:hint="@string/password"
+            android:textColor="@color/textColor"/>
+    </RelativeLayout>
+
+

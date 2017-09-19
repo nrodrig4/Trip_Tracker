@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.TripHistoryMap">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapViewPop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <TextView
+        android:id="@+id/tripLabelPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/settings_header"
+        android:text="No Trip Selected"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tripLengthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="Trip Length: --"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tripS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tripLengthView"
+
+        android:text="Trip Start: --"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tripE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tripS"
+        android:text="Trip End: --"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/averageSpeedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripE"
+        android:text="Average Speed: --"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/maxSpeedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/averageSpeedView"
+        android:text="Max Speed: -- "
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+
+
+    <ToggleButton
+        android:id="@+id/updateListButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/ic_menu_edit"
+        android:checked="true"
+        android:textOff=" "
+        android:textOn=" " />
+
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@android:drawable/ic_popup_sync"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/updateListButton"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="@android:drawable/ic_menu_delete" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.TripHistoryGraph">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/historyChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_border"/>
+
+</RelativeLayout>

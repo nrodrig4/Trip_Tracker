@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">"Senior Design "</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="latitude">Latitiude: --</string>
+    <string name="longitude">Longitude: --</string>
+    <string name="accuracy">Accuracy: --</string>
+    <string name="car_speed">-- mph</string>
+    <string name="speed_limit">Speed Limit: -- mph</string>
+    <string name="set_region_name_hint">Enter Region Name</string>
+    <string name="dialog_title">Region Download</string>
+    <string name="dialog_message">Name this region</string>
+    <string name="dialog_positive_button">Download</string>
+    <string name="dialog_toast">Download requires a region name</string>
+    <string name="dialog_negative_button">Cancel</string>
+    <string name="dialog_download">Region Downloading</string>
+    <string name="toast_no_regions_yet">No Regions Created</string>
+    <string name="navigate_title">Choose a region</string>
+    <string name="navigate_positive_button">NAVIGATE TO</string>
+    <string name="navigate_negative_button_title">CANCEL</string>
+    <string name="toast_region_deleted">Region Deleted</string>
+    <string name="navigate_neutral_button_title">DELETE</string>
+    <string name="region_name">error select %1$d item</string>
+    <string name="end_progress_success">Succesfully downloaded!</string>
+    <string name="speed_average">Average Speed: -- mph</string>
+    <string name="recordingText1">Recording</string>
+    <string name="recordingText2">Recording.</string>
+    <string name="recordingText3">Recording..</string>
+    <string name="recordingText4">Recording...</string>
+    <string name="recordText0">Record</string>
+    <string name="average_speed_label">Average Speed During Trip:</string>
+    <string name="max_speed_label">Max Speed During Trip:</string>
+    <string name="delete_trip_label">Choose a trip to delete</string>
+    <string name="choose_trip_label">Choose a trip to view</string>
+    <string name="map_type_streets">Streets</string>
+    <string name="map_type_hybrid">Hybrid</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_dark">Dark</string>
+    <string name="map_type_tron">Tron</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="choose_existing_user"><u>Choose Existing User</u></string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="arduino_settings">Arduino Settings</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="enter_username">Enter Username:</string>
+    <string name="average_speed">Average Speed: --</string>
+    <string name="distance_traveled">Distance Traveled: --</string>
+    <string name="max_speed">Max Speed: --</string>
+    <string name="time_on_road">Time On Road: --</string>
+    <string name="all_time">All Time</string>
+    <string name="no_trips">No Trips On Recored</string>
+</resources>

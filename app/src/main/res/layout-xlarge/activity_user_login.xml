@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicrodriguez.seniordesign.UserLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40">
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/title_background"
+                android:paddingTop="30dp"
+                android:text="Trip Tracker"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="70sp" />
+
+            <TextView
+                android:id="@+id/user_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/choose_existing_user"
+                android:textColor="@color/textColor"
+                android:textSize="25sp" />
+<?ignore
+            <EditText
+                android:id="@+id/password_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/username_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/password_edit"
+                android:layout_alignEnd="@+id/password_edit"
+                android:layout_marginBottom="76dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/NewUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/my_border"
+
+                android:padding="10dp"
+                android:text="Create Profile"
+                android:textColor="@color/textColor" />
+    ?>
+
+
+            <SearchView
+                android:id="@+id/user_searcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/user_label"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:queryHint="find user"/>
+
+
+            <Button
+                android:id="@+id/newUserButton"
+                android:layout_width="175dp"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="New Profile"
+                android:textSize="35dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_border"/>
+
+            <TextView
+                android:id="@+id/welcome_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/newUserButton"
+                android:textSize="25sp"
+                android:text="Create New Profile"
+                android:textAlignment="center"
+                android:textColor="@color/textColor" />
+
+        </RelativeLayout>
+
+
+
+        <ListView
+
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_weight="60"
+            android:background="@drawable/login_user_border" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
